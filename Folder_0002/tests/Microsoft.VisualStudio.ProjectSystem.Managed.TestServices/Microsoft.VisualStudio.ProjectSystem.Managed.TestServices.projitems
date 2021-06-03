@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>B91C9A15-D53D-DCE1-45F0-E66A5F3119B4</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Microsoft.VisualStudio.ProjectSystem.Managed.TestServices</Import_RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PublishOutputToSymStore>false</PublishOutputToSymStore>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)**\*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\ThrowingTraceListener.cs" Link="Diagnostics\ThrowingTraceListener.cs" />
+  </ItemGroup>
+</Project>

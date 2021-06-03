@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Microsoft.  All Rights Reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information. -->
+<Rule Name="DotNetCliToolReference"
+      Description="Package"
+      DisplayName="Package"
+      PageTemplate="generic"
+      xmlns="http://schemas.microsoft.com/build/2009/properties">
+  <Rule.DataSource>
+    <DataSource HasConfigurationCondition="False"
+                ItemType="DotNetCliToolReference"
+                Persistence="ProjectFile"
+                SourceOfDefaultValue="AfterContext" />
+  </Rule.DataSource>
+
+  <StringProperty Name="Description"
+                  Description="Dependency description."
+                  DisplayName="Description"
+                  ReadOnly="True" />
+
+  <StringProperty Name="ExcludeAssets"
+                  Description="Assets to exclude from this reference."
+                  DisplayName="ExcludeAssets" />
+
+  <StringProperty Name="FrameworkName"
+                  ReadOnly="True"
+                  Visible="False" />
+
+  <StringProperty Name="FrameworkVersion"
+                  ReadOnly="True"
+                  Visible="False" />
+
+  <StringProperty Name="IncludeAssets"
+                  Description="Assets to include from this reference."
+                  DisplayName="IncludeAssets" />
+
+  <StringProperty Name="Name"
+                  ReadOnly="True"
+                  DisplayName="Name" />
+
+  <StringProperty Name="OriginalItemSpec"
+                  ReadOnly="True"
+                  Visible="False" />
+
+  <StringProperty Name="Path"
+                  ReadOnly="True"
+                  Visible="False" />
+
+  <StringProperty Name="PrivateAssets"
+                  Description="Assets that are private in this reference."
+                  DisplayName="PrivateAssets" />
+
+  <StringProperty Name="RuntimeIdentifier"
+                  ReadOnly="True"
+                  Visible="False" />
+
+  <StringProperty Name="TargetFramework"
+                  ReadOnly="True"
+                  Visible="False" />
+
+  <StringProperty Name="Type"
+                  ReadOnly="True"
+                  Visible="False" />
+
+  <StringProperty Name="Version"
+                  Description="Version of dependency."
+                  DisplayName="Version" />
+
+</Rule>
